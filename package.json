@@ -1,0 +1,18 @@
+{
+  "name": "fs-project-2-rest-api",
+  "version": "1.0.0",
+  "description": "A movie database application with REST API and Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Riku Ruotsila",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.1.0"
+  }
+}

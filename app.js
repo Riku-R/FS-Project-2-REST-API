@@ -1,16 +1,18 @@
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
 
 const uri = process.env.DB_URI;
 const PORT = process.env.PORT || 3000;
 
+const app = express();
+
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const Movie = require("./modules/model");
-const client = mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const client = mongoose.connect(`${process.env.DB_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 
 // Get all the movies

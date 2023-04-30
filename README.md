@@ -21,6 +21,6 @@ The routes for this API are:
  /api/delete/:id
   This route lets you delete a movie in the database using its ID.
   
-  The application will console log information about what is currently happening.
+  The application will console log information about what is currently happening and print status codes during every activity.
   
  
